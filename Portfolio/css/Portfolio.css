@@ -3,16 +3,23 @@
     padding: 0;
     font-family: 'Poppins';
 }
-
+.container{
+    display: inline-block;
+}
+#navigation{
+    width: 20vh;
+    height: 100vh;
+}
 #main{
     height: 100vh;
     background-image: url(../img/back.jpg);
+    width: 80vh;
+    
 }
 
-#navigation{
-    height: 20%;
-    color: black;
-
+#navigation nav ul .list .logo{
+    
+    align-items: center;
 }
 #navigation nav ul .list{
     height :100vh;
@@ -33,21 +40,29 @@
 
 #navigation nav ul .list a{
     text-decoration: none;
-    padding: 25px;
+    padding: 5px;
     color: black;
     
+    
 }
-span{
+
+#navigation nav ul .list a:hover{
+    color: rgb(179, 77, 179);
+}
+.logo span{
     color: red;
 }
 .des p{
     font-size: 18px;
     text-align: center;
 }
-.socials{
-    float: center;
+.socials {
+    align-items: center;
+    padding: 20px;
+    padding-right: 15px;
+    size: 10px;
 }
  .socials p{
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
  }
