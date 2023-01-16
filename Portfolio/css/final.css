@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+
+.container .sidenav{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    text-align: center;
+    background-color: #0a192f;
+    color: #ccd6f6;
+    border: 2px solid #64ffda;
+}
+.container .sidenav .logo img{
+    margin: 30px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.container .sidenav .logo li{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container .sidenav .list li a{
+    color: #ccd6f6;
+    font-size: 1.3em;
+    transition: all 0.5s;
+}
+
+.container .sidenav .list li a:hover{
+    color: #64ffda;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.container .sidenav .list .social{
+    display: flex;
+    flex-direction: column;
+}
+.container .sidenav .list .social a{
+    margin-right: 15px;
+    justify-items: center;
+    font-size: 1.2em;
+    color: #64ffda;
+}
+span{
+    color: red;
+}
+
+.container .main{
+    margin-left: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+.container .main #home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url(../img/download.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #64ffda;
+}
+.container .main #home .intro{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container .main #home img{
+    width: 500px;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.container .main #about{
+    line-height: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: #233554;
+    border: 2px solid #64ffda;
+}
+
+.container .main #about .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    font-size: 0.8em;
+    color: #ccd6f6;
+}
+.container .main #about .pic img{
+    position: relative;
+    top: 15%;
+    width: 400px;
+    object-fit: cover;
+    height: 500px;
+}
+
+.container .main #portfolio{
+    border: 2px solid #64ffda;
+    background-color: #233554;
+    height: 100vh;
+}
+
+.container .main #contact{
+    height: 100vh;
+    background-color: #233554;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #64ffda;
+}
+.container .main #contact header{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: azure;
+}
+.container .main #contact .con{
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 10px 0;
+    background-color: #ccd6f6;
+    border-radius: 5px;
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit]{
+    background-color: #0a192f;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 1s;
+}
+input[type=submit]:hover{
+    color: #0a192f;
+    background-color: #64ffda;
+}
