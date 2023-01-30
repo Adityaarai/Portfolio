@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: #ed254e;
+    --darkblue: #011936;
+    --grey:#f4fffd;
+    --yellow: #f9dc5c;
+    --blackcoral: #465362;
+    --brown: #4d0000;
+    --darkgrey: #8f9fb0;
+    --black: #1a1a1a;
+    --green: #00e699;
+    --margin: 10px 20px;
+}
+
+/* -------------------------home------------------------------ */
+
+#home{
+    background-image: url(../img/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+#navbar{
+    background-color: var(--grey);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+.logo{
+    color: var(--blackcoral);
+    margin: var(--margin);
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.nav-list li{
+    display: inline-block;
+    margin: var(--margin);
+}
+.nav-list li a{
+    color: var(--blackcoral);
+    font-size: 1.3em;
+    font-weight: 800;
+    position: relative;
+}
+.nav-list li a::after{
+    content: '';
+    background-color: var(--red);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    transition: 0.5s;
+}
+.nav-list li a:hover::after{
+    width: 100%;
+}
+.nav-list li a.active{
+    color: var(--yellow);
+}
+.nav-list li a:hover{
+    font-size: 1.35em;
+}
+.info{
+    padding-top: 20%;
+}
+.info h1{
+    text-transform: capitalize;
+    margin: var(--margin);
+    color: var(--yellow);
+}
+
+/* -------------------------home------------------------------ */
+/* -------------------------about----------------------------- */
+
+#about{
+    background-color: var(--darkblue);
+
+}
