@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 ::selection{
-    
+    background: var(--green);
+    color: var(--grey);
 }
 :root{
     --red: #ed254e;
@@ -20,27 +21,24 @@
     --brown: #4d0000;
     --darkgrey: #8f9fb0;
     --black: #1a1a1a;
-    --green: #00e699;
-    --margin: 10px 20px;
+    --green: #369055;
+    --nav-margin: 10px 20px;
 }
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-color: var(--darkblue);
+span{
+    color: var(--red);
 }
 
 /* -------------------------home------------------------------ */
 
 #home{
-    background-image: url(../img/back.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--black);
     height: 100vh;
     width: 100%;
 }
-#navbar{
+.navbar{
     background-color: var(--grey);
     height: 80px;
     width: 100%;
@@ -50,20 +48,22 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     border-radius: 10px;
+    transition: 0.5s;
+}
+.nav-hide{
+    transform: translateY(calc(-1 * 80px));
 }
 .logo{
     color: var(--blackcoral);
-    margin: var(--margin);
+    margin: var(--nav-margin);
     font-size: 1.3em;
     font-weight: 800;
 }
-span{
-    color: var(--red);
-}
 .nav-list li{
     display: inline-block;
-    margin: var(--margin);
+    margin: var(--nav-margin);
 }
 .nav-list li a{
     color: var(--blackcoral);
@@ -84,9 +84,6 @@ span{
 .nav-list li a:hover::after{
     width: 100%;
 }
-.nav-list li a.active{
-    color: var(--yellow);
-}
 .nav-list li a:hover{
     font-size: 1.35em;
 }
@@ -95,7 +92,7 @@ span{
 }
 .info h1{
     text-transform: capitalize;
-    margin: var(--margin);
+    margin: var(--nav-margin);
     color: var(--yellow);
 }
 
@@ -103,11 +100,16 @@ span{
 /* -------------------------about----------------------------- */
 
 #about{
-    background-color: var(--darkblue);
+    background-color: var(--black);
     color: var(--grey);
-    padding: 80px 0;
+    padding: 120px 0;
+    height: 100vh;
 }
-
+.edu-ita{
+    color: var(--grey);
+    font-style: italic;
+    justify-content: space-between;
+}
 .row{
     display: flex;
     justify-content: space-between;
@@ -123,6 +125,7 @@ span{
     padding: 0 10px;
 }
 .column1 img{
+    margin-top: 30px;
     width: 380px;
     height: 400px;
     border-radius: 10px;
@@ -159,8 +162,154 @@ span{
     transition: 0.5s;
 }
 .tab-links.activelink::after{
-    width: 50%;
+    width: 70%;
 }
+.tab-contents ul li{
+    margin: 10px 0;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.activetab{
+    display: block;
+}
+
 
 /* -------------------------about----------------------------- */
 /* -------------------------portfolio------------------------- */
+#portfolio{
+    padding: 5px 0;
+    background: var(--black);
+}
+.interest-list{
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.interest-title{
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--red);
+    text-align: center;
+    margin: 10px 0;
+}
+.interest-list h2{
+    color: var(--red);
+    margin: 0 15px;
+}
+.interest-list p{
+    color: var(--grey);
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: 5px 15px;
+}
+.interest-list i{
+    margin: 5px 15px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: var(--grey);
+}
+.interest-list div{
+    background-color: var(--blackcoral);
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+.interest-list div:hover{
+    background-color: var(--brown);
+    transform: translateY(-10px);
+}
+/* -------------------------contact------------------------- */
+#contact{
+    background: var(--black);
+    color: var(--grey);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-title h1{
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--red);
+    text-align: center;
+    margin: 20px 0;
+}
+form{
+    padding: 20px;
+    background: var(--brown);
+    width: 600px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+input[type=text], select, textarea{
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 15px 6px;
+    border-radius: 5px;
+    background: var(--grey);
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+input[type=email]{
+    font-weight: 500;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 15px 6px;
+    border-radius: 5px;
+    background: var(--grey);
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 12px;
+    border-radius: 10px;
+    background: var(--yellow);
+    color: var(--darkblue);
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background: var(--black);
+    color: var(--red);
+}
+/* -------------------------references------------------------- */
+#refer{
+    background: var(--black);
+    padding: 50px 0;
+    color: var(--grey);
+    text-align: center;
+}
+#refer h1{
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--red);
+    margin: 40px 0;
+}
+.refer-link a{
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: var(--grey);
+    text-align: left;
+}
+.refer-link i{
+    margin: 10px 10px;
+}
+/* -------------------------footer------------------------- */
+footer{
+    background: var(--blackcoral);
+    color: var(--grey);
+    text-align: center;
+}
+footer p{
+    padding: 20px 0;
+    font-size: 1.2em;
+    color: var(--grey);
+}
+footer i{
+    font-size: 1.2em;
+    color: var(--grey);
+    margin: 0 5px;
+}

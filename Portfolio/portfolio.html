@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Rai</title>
     <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
-    <script src="./js/portfolio.js"></script>
+<body>  
+<!-- /* -------------------------home------------------------------*/ -->
     <div id="home">
-        <nav id="navbar">
+        <nav class="navbar">
             <div class="logo">
                 <h1>Aditya <span>Rai</span></h1>
             </div>
-            <ul class="nav-list active">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#refer">References</a></li>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#refer" class="nav-link">References</a></li>
             </ul>
         </nav>
         <div class="info">
@@ -27,6 +28,7 @@
             <h1>Hi I am,<br>Aditya Rai</h1>
         </div>
     </div>
+<!-- /* -------------------------about------------------------------*/ -->
     <div id="about">
         <div class="row">
             <div class="column1">
@@ -34,15 +36,109 @@
             </div>
             <div class="column2">
                 <div class="title">
-                    <h1>About Me</h1>
+                    <h1>About Me</h1><br>
                     <p>Hello! My name is Aditya Rai. I am a student in Herald College Kathmandu. I am an aspiring web developer, well versed in HTML, CSS and JavaScript. I have been learning to make websites recently.</p>
+                </div>
                 <div class="tab-titles">
-                    <p class="tab-links activelink">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links activelink" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents activetab" id="Skills">
+                    <ul>
+                        <li><span>HTML/CSS/JavaScript</span><br>Designing Websites</li>
+                        <li><span>Java/Python</span><br>Programming Languages</li>
+                        <li><span>MicroSoft</span><br>Word, Excel, PowerPoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>None</span><br>Till Now</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Bagmati Boarding School</span><br><span class="edu-ita">2010-2020 &nbsp;&nbsp;-GPA: 3.85</span></li>
+                        <li><span>Global School of Science</span><br><span class="edu-ita">2020-2022 &nbsp;&nbsp;-GPA: 3.70</span></li>
+                        <li><span>Herald College Kathmandu</span><br><span class="edu-ita">2022-present</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+<!-- /* -------------------------portfolio------------------------------*/ -->
+    <div id="portfolio">
+        <h1 class="interest-title">My Interests</h1>
+        <div class="interest-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Coding</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi. Laboriosam, officia! Culpa deleniti ratione illum soluta voluptatum quaerat provident, cum, dolores numquam unde porro dolorem repudiandae possimus laborum cupiditate.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-bicycle"></i>
+                <h2>Cycling</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi. Laboriosam, officia! Culpa deleniti ratione illum soluta voluptatum quaerat provident, cum, dolores numquam unde porro dolorem repudiandae possimus laborum cupiditate.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Playing Basketball</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi. Laboriosam, officia! Culpa deleniti ratione illum soluta voluptatum quaerat provident, cum, dolores numquam unde porro dolorem repudiandae possimus laborum cupiditate.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Playing Basketball</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi. Laboriosam, officia! Culpa deleniti ratione illum soluta voluptatum quaerat provident, cum, dolores numquam unde porro dolorem repudiandae possimus laborum cupiditate.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Playing Basketball</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi. Laboriosam, officia! Culpa deleniti ratione illum soluta voluptatum quaerat provident, cum, dolores numquam unde porro dolorem repudiandae possimus laborum cupiditate.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Playing Basketball</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eligendi. Laboriosam, officia! Culpa deleniti ratione illum soluta voluptatum quaerat provident, cum, dolores numquam unde porro dolorem repudiandae possimus laborum cupiditate.</p>
+            </div>
+        </div>
+    </div>
+<!-- /* -------------------------contact------------------------------*/ -->
+    <div id="contact">
+        <div class="contact-title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="form">
+            <form>
+                <label for="firstname">First Name:</label><br>
+                <input type="text" name="firstname" id="firstname" placeholder="Enter your First Name..."><br>
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name..."><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email..."><br>
+                <label for="message">Enter your message:</label><br>
+                <textarea name="msg" id="msg" placeholder="Enter your queries..."></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+<!-- /* -------------------------references------------------------------*/ -->
+   <div id="refer">
+        <h1>References</h1>
+        <div class="refer-link">
+            <a href="https://www.youtube.com/watch?v=0YFrGy_mzjY&t=2750s"><i class="fa-brands fa-youtube"></i> Portfolio Reference</a><br>
+            <a href="https://fontawesome.com"><i class="fa-solid fa-earth-asia"></i> Icons</a><br>
+            <a href=""></a><br>
+        </div>
+   </div>
+<!-- /* -------------------------footer------------------------------*/ -->
+    <footer>
+        <p>You can also contact me on these links:</p>
+        <a href="https://www.facebook.com/aditya.rai.35175633"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.instagram.com/aditya_raee/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Adityaarai"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:adityarai23bs@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <p>© Aditya Rai 2023</p>
+    </footer>
+    <script src="./js/portfolio.js"></script>
 </body>
 </html>
