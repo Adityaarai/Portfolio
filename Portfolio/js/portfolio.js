@@ -22,8 +22,17 @@ window.addEventListener("scroll", function(){
     } else {
         navi.classList.remove("nav-hide")
     }
-
     lastScrollY = window.scrollY
-});
+    });
+
+var smenu = document.getElementById("menu");
+
+function openmenu(){
+    smenu.style.right = "0";
+}
+function closemenu(){
+    smenu.style.right = "-200px";
+}
+
 // disappearing navbar
 
