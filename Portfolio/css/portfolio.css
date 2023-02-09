@@ -112,7 +112,7 @@ span{
 }
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 .column1{
     flex-basis: 35%;
@@ -228,12 +228,43 @@ span{
     flex-direction: column;
     align-items: center;
 }
-.contact-title h1{
+.contact-title{
     font-size: 3em;
     font-weight: 600;
     color: var(--red);
-    text-align: center;
     margin: 20px 0;
+}
+.left{
+    flex-basis: 35%;
+    justify-content: left;
+}
+.right{
+    flex-basis: 55%;
+}
+.left i{
+    font-size: 1.5em;
+    color: var(--yellow);
+    margin: 0 10px;
+}
+.left p{
+    font-size: 1.2em;
+    color: var(--grey);
+    margin-top: 30px;
+}
+.butt.butt2{
+    display: inline-block;
+    background-color: var(--brown);
+    color: var(--grey);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 0.1px solid var(--darkgrey);
+}
+.butt.butt2:hover{
+    background: var(--grey);
+    color: var(--black);
 }
 form{
     padding: 20px;
@@ -243,7 +274,7 @@ form{
     font-size: 1.2em;
 }
 input[type=text], select, textarea{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.8em;
     width: 100%;
     padding: 15px 6px;
@@ -253,7 +284,7 @@ input[type=text], select, textarea{
     margin-bottom: 10px;
 }
 input[type=email]{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.8em;
     width: 100%;
     padding: 15px 6px;
@@ -263,7 +294,7 @@ input[type=email]{
     margin-bottom: 10px;
 }
 input[type=submit]{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.8em;
     padding: 12px;
     border-radius: 10px;
@@ -307,9 +338,4 @@ footer p{
     padding: 20px 0;
     font-size: 1.2em;
     color: var(--grey);
-}
-footer i{
-    font-size: 1.2em;
-    color: var(--grey);
-    margin: 0 5px;
 }
