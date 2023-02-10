@@ -316,13 +316,20 @@ input[type=submit]:hover{
     margin: 20px 0;
 }
 .refer-link a{
-    font-size: 1.3em;
-    margin: 20px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
     color: var(--white);
-    margin-left: 40%;
+    text-align: center;
+}
+.refer-link p{
+    font-size: 1.3em;
+    margin: 10px 0;
+    color: var(--white);
+    text-align: center;
 }
 .refer-link i{
     margin: 10px 15px;
+    text-align: center;
 }
 /* -------------------------footer------------------------- */
 footer{
@@ -347,6 +354,9 @@ footer p{
     #about, #portfolio, #contact, #refer{
         height: auto;
         width: 100%;
+    }
+    #about{
+        padding: 20px 20px;
     }
     .navbar{
         width: 100%;
@@ -393,15 +403,15 @@ footer p{
         flex-basis: 100%;
     }
     #contact{
-        padding: 20px 20px;
+        padding: 40px 40px;
     }
     footer p{
         padding: 5px 0;
     }
     form{
-        padding: 10px;
+        padding: 20px;
         font-size: 1em;
-        width: 100%;
+        width: auto;
         height: auto;
         margin-left: auto;
         margin-right: auto;
@@ -418,5 +428,19 @@ footer p{
         margin-left: auto;
         margin-right: auto;
         display: block;
+        
+    }
+}
+
+@media screen and (max-width: 420px){
+    .column1 img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .tab-links{
+        margin-right: auto;
     }
 }
