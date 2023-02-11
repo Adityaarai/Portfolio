@@ -13,6 +13,7 @@ function opentab(tabname){
 }
 //disappearing about section
 
+//hamburger menu bar
 var smenu = document.getElementById("menu");
 
 function openmenu(){
@@ -21,6 +22,8 @@ function openmenu(){
 function closemenu(){
     smenu.style.right = "-300px";
 }
+
+//contact form  
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyP2KXY8BcBQrj4A78sMfM_-nKA1km-gTUuowzB6ztTurAUVmlYGeBwecF4-TC1ozmS/exec'
 const form = document.forms['Contact-Me']
 
