@@ -169,7 +169,7 @@ span{
 /* -------------------------portfolio------------------------- */
 
 #portfolio{
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: var(--black);
     border-bottom: 2px dashed var(--aqua);
 }

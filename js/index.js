@@ -22,22 +22,20 @@ function closemenu(){
     smenu.style.right = "-300px";
 }
 
-window.addEventListener('resize', function(){
-    let width = window.innerWidth;
+let width = window.innerWidth;
 
-    if ( width > 1024) {
-        let navi = document.querySelector(".navbar");
-        let lastScrollY = window.scrollY;
+if ( width > 1024) {
+    let navi = document.querySelector(".navbar");
+    let lastScrollY = window.scrollY;
 
-        window.addEventListener("scroll", function(){
-        if (lastScrollY < window.scrollY){
-            navi.classList.add("nav-hide");
-        } else {
-            navi.classList.remove("nav-hide");
-        }
-        lastScrollY = window.scrollY;
-        });
+    window.addEventListener("scroll", function(){
+    if (lastScrollY < window.scrollY){
+        navi.classList.add("nav-hide");
+    } else {
+        navi.classList.remove("nav-hide");
     }
-});
+    lastScrollY = window.scrollY;
+    });
+}
 // disappearing navbar
 
