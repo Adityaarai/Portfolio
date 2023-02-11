@@ -21,21 +21,12 @@ function openmenu(){
 function closemenu(){
     smenu.style.right = "-300px";
 }
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyP2KXY8BcBQrj4A78sMfM_-nKA1km-gTUuowzB6ztTurAUVmlYGeBwecF4-TC1ozmS/exec'
+const form = document.forms['Contact-Me']
 
-let width = window.innerWidth;
-
-if ( width > 1024) {
-    let navi = document.querySelector(".navbar");
-    let lastScrollY = window.scrollY;
-
-    window.addEventListener("scroll", function(){
-    if (lastScrollY < window.scrollY){
-        navi.classList.add("nav-hide");
-    } else {
-        navi.classList.remove("nav-hide");
-    }
-    lastScrollY = window.scrollY;
-    });
-}
-// disappearing navbar
-
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert('Success! Your message has been submitted.', response))
+    .catch(error => console.error('Error!', error.message))
+})
