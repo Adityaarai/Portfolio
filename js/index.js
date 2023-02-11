@@ -27,6 +27,7 @@ function closemenu(){
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyP2KXY8BcBQrj4A78sMfM_-nKA1km-gTUuowzB6ztTurAUVmlYGeBwecF4-TC1ozmS/exec'
 const form = document.forms['Contact-Me']
 let submit = document.querySelector(".submit")
+submit.disabled = false;
 
 form.addEventListener('submit', e => {
   e.preventDefault()
