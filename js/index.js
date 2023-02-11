@@ -38,20 +38,6 @@ window.addEventListener('resize', function(){
         lastScrollY = window.scrollY;
         });
     }
-    else if (width < 1024){
-        let navi = document.querySelector(".navbar");
-        let lastScrollY = window.scrollY;
-
-        window.addEventListener("scroll", function(){
-        if (lastScrollY < window.scrollY){
-            navi.classList.add("nav-hide");
-        } else {
-            navi.classList.remove("nav-hide");
-        }
-        lastScrollY = window.scrollY;
-        });
-    }
-    width = window.innerWidth;
 });
 // disappearing navbar
 

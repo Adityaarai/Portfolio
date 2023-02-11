@@ -96,10 +96,10 @@ span{
 #about{
     background-color: var(--black);
     color: var(--white);
-    padding: 80px 50px;
+    padding: 100px 50px;
     padding-top: 120px;
     height: calc(100vh - 60px);
-    border-bottom: 1px dashed var(--aqua);
+    border-bottom: 2px dashed var(--aqua);
 }
 .edu-ita{
     color: var(--white);
@@ -171,7 +171,7 @@ span{
 #portfolio{
     padding: 50px 0;
     background-color: var(--black);
-    border-bottom: 1px dashed var(--aqua);
+    border-bottom: 2px dashed var(--aqua);
 }
 .interest-list{
     margin: 10px 20px;
@@ -197,8 +197,7 @@ span{
     margin: 5px 15px;
 }
 .interest-list i{
-    margin: 5px 15px;
-    margin-bottom: 20px;
+    margin: 10px 15px;
     font-size: 2em;
     color: var(--white);
 }
@@ -218,7 +217,7 @@ span{
     padding: 50px 0;
     padding: 50px 50px;
     height: 100vh;
-    border-bottom: 1px dashed var(--aqua);
+    border-bottom: 2px dashed var(--aqua);
 }
 .contact-title{
     font-size: 3em;
@@ -309,7 +308,7 @@ input[type=submit]:hover{
 #refer{
     background: var(--black);
     padding: 40px 0;
-    border-bottom: 1px dashed var(--aqua);
+    border-bottom: 2px dashed var(--aqua);
 }
 .refer-title{
     text-align: center;
@@ -349,7 +348,7 @@ footer p{
 .navbar .ham{
     display: none;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1042px) {
     #home{
         height: 100vh;
         width: auto;
@@ -363,6 +362,9 @@ footer p{
     }
     #about{
         padding: 100px 20px;
+    }
+    .info{
+        padding-top: 40vh;
     }
     .navbar{
         width: 100%;
